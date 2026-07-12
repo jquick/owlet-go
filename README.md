@@ -5,8 +5,6 @@ camera over Kalay P2P (via the stock ThroughTek SDK through cgo), pulls the raw
 H.264 + AAC FIFOs, and serves a browser player that decodes them with WebCodecs.
 No ffmpeg, no muxing, no re-encoding.
 
-<img width="1197" height="698" alt="Screenshot 2026-07-12 at 1 40 42 PM" src="https://github.com/user-attachments/assets/2b4cf8d1-3379-4fb3-adb4-549629388550" />
-
 ## What you need
 
 Config lives in a `.env` file here in `owlet-go/`. Start from the template:
