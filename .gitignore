@@ -1,0 +1,11 @@
+# Secrets — never commit. .env holds TUTK_UID / AUTH_KEY / PASSWORD / SDK_KEY.
+.env
+.env.*
+!.env.sample
+
+# Captured phone traffic (tools/capture_auth -save)
+tools/**/captures/
+
+# Build artifacts
+owletcam
+*.so

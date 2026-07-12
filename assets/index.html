@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Owlet Cam</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="player" id="player">
+    <canvas id="view" width="960" height="540"></canvas>
+    <div class="bar">
+      <button id="mute" class="icon" title="Mute"></button>
+      <input id="vol" class="vol" type="range" min="0" max="100" value="100" title="Volume" />
+      <span class="live"><span class="dot" id="dot"></span> LIVE</span>
+      <span class="spacer"></span>
+      <span id="status">connecting…</span>
+      <button id="fs" class="icon" title="Fullscreen"></button>
+    </div>
+  </div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+services:
+  owlet-cam:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: owlet-cam:latest
+    restart: unless-stopped
+    network_mode: host
+    env_file:
+      - .env
+    environment:
+      HTTP_PORT: "8091"   # view at https://<host>:8091/ (self-signed; accept the warning)
+      TLS: "1"            # 1 = serve HTTPS (self-signed); 0 = plain HTTP
+      QUALITY: "high"     # max|high|hd|middle|sd|low|ld
+      CHANNEL: "0"
+      AV_ACCOUNT: "admin"
+      LAN_ONLY: "1"       # 1 = never contact the cloud; 0 = allow rendezvous
