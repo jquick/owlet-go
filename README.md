@@ -1,9 +1,9 @@
 # owlet-go
 
-A clean, single-binary Go rewrite of the Owlet Cam bridge. It connects to the
-camera over Kalay P2P (via the stock ThroughTek SDK through cgo), pulls the raw
-H.264 + AAC FIFOs, and serves a browser player that decodes them with WebCodecs.
-No ffmpeg, no muxing, no re-encoding.
+A golang Owlet Cam bridge over LAN. It connects to the
+camera over Kalay P2P (via the stock ThroughTek SDK), pulls the raw
+H.264 + AAC FIFOs, and serves a browser player. This allows you to watch
+the feed from a lan computer instead of being forced to use the app.
 
 <img width="1939" height="1110" alt="Screenshot 2026-07-13 085643" src="https://github.com/user-attachments/assets/4e3a3719-457f-4b1d-841a-6801d628bcc5" />
 
